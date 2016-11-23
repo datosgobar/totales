@@ -1,7 +1,8 @@
 import csv
 from collections import defaultdict
 
-# Column indexes
+
+# Column indexes on CSV file.
 TOTAL = 1
 ADVERTISER = 2
 CAMPAIGN = 3
