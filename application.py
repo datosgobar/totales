@@ -11,6 +11,6 @@ def index():
 @app.route('/totales')
 def get_totals():
     results = totals.compute_from('pauta-oficial-primer-semestre-2016.csv')
-    advertisers, campaigns, mediums, total = results
+    advertisers, campaigns, media, total = results
     
     return 'This should return totals computed from a CVS file.'

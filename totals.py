@@ -11,7 +11,7 @@ MEDIUM = 4
 def compute_from(file):
     advertisers = defaultdict(lambda: 0)
     campaigns = defaultdict(lambda: 0)
-    mediums = defaultdict(lambda: 0)
+    media = defaultdict(lambda: 0)
     total = 0
 
     with open(file, newline='') as csv_file:
@@ -21,7 +21,7 @@ def compute_from(file):
             amount = float(row[TOTAL])
             advertisers[row[ADVERTISER]] += amount
             campaigns[row[CAMPAIGN]] += amount
-            mediums[row[MEDIUM]] += amount
+            media[row[MEDIUM]] += amount
             total += amount
     
-    return advertisers, campaigns, mediums, total
+    return advertisers, campaigns, media, total
