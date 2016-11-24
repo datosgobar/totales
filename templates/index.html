@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="static/styles.css" type="text/css" />
     </head>
     <body>
-
-        <div class="header">
-            <h1>Pauta Oficial 2016</h1>
+		<div class="header">
+	        <div class="banner">
+	            <h1>Pauta Oficial 2016</h1>
+	        </div>
+			<div class="totals">
+				<h3>Total: ${{ totals.total|round(2) }}</h3>
+			</div>
         </div>
-
-        <div class="content">
-            <h2>Total: ${{ totals.total|round(2) }}</h2>
-            
+        <div style="width:100%; height:150px;">&nbsp;</div>
+        <div class="content">            
             <h4>Rubros</h4>
             <ul>
             {% for medium, total in totals.media.items()|sort %}

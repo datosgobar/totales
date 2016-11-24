@@ -1,13 +1,26 @@
-.header {
+.banner {
 	padding: 2%;
-    background-color: lightblue;
+    background-color: #0072bc;
     border-color: gray;
-    color: white;
-    font-family: helvetica;
+    text-align: center;
 }
 .content {
 	padding: 2%;
     background-color: white;
     font-family: helvetica;
-    color: gray;
+    color: teal;
+    overflow: auto;
+}
+.header {
+	background-color: #00B9F1;
+	color: white;
+	font-family: helvetica;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.totals {
+	padding-left: 2%;
 }
