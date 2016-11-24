@@ -1,1 +1,34 @@
-This is the HOMEPAGE template.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Totales | Pauta Oficial 2016</title>
+    </head>
+    <body>
+
+        <h1>Pauta Oficial 2016</h1>
+
+        <h3>Total: ${{ totals.total }}</h3>
+        
+        <h3>Rubros</h3>
+        <ul>
+        {% for medium, total in totals.media.items() %}
+            <li>{{ medium }} - {{ total }}</a></li>
+        {% endfor %}
+        </ul>
+
+        <h3>Campañas</h3>
+        <ul>
+        {% for campaign, total in totals.campaigns.items() %}
+            <li>{{ campaign }} - {{ total }}</a></li>
+        {% endfor %}
+        </ul>
+
+        <h3>Anunciantes</h3>
+        <ul>
+        {% for advertiser, total in totals.advertisers.items() %}
+            <li>{{ advertiser }} - {{ total }}</a></li>
+        {% endfor %}
+        </ul>
+
+    </body>
+</html>
