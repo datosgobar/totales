@@ -9,7 +9,6 @@
     background-color: white;
     font-family: helvetica;
     color: teal;
-    overflow: auto;
 }
 .header {
 	background-color: #00B9F1;
@@ -21,6 +20,15 @@
 	top: 0;
 	z-index: 100;
 }
+.highlight {
+    background-color: cyan;
+}
+.partial {
+	float: right;
+	font-weight: normal; !important;
+}
 .totals {
-	padding-left: 2%;
+	padding: 2%;
+	font-size: 20px;
+	font-weight: bold;
 }
