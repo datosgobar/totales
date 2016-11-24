@@ -8,6 +8,7 @@ ADVERTISER = 2
 CAMPAIGN = 3
 MEDIUM = 4
 
+
 def compute_from(file):
     advertisers = defaultdict(lambda: 0)
     campaigns = defaultdict(lambda: 0)
