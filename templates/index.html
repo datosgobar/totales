@@ -2,33 +2,37 @@
 <html>
     <head>
         <title>Totales | Pauta Oficial 2016</title>
+        <link rel="stylesheet" href="static/styles.css" type="text/css" />
     </head>
     <body>
 
-        <h1>Pauta Oficial 2016</h1>
+        <div class="header">
+            <h1>Pauta Oficial 2016</h1>
+        </div>
 
-        <h3>Total: ${{ totals.total }}</h3>
-        
-        <h3>Rubros</h3>
-        <ul>
-        {% for medium, total in totals.media.items() %}
-            <li>{{ medium }} - {{ total }}</a></li>
-        {% endfor %}
-        </ul>
+        <div class="content">
+            <h2>Total: ${{ totals.total|round(2) }}</h2>
+            
+            <h4>Rubros</h4>
+            <ul>
+            {% for medium, total in totals.media.items()|sort %}
+                <li>{{ medium }} - ${{ total|round(2) }}</a></li>
+            {% endfor %}
+            </ul>
 
-        <h3>Campañas</h3>
-        <ul>
-        {% for campaign, total in totals.campaigns.items() %}
-            <li>{{ campaign }} - {{ total }}</a></li>
-        {% endfor %}
-        </ul>
+            <h4>Campañas</h4>
+            <ul>
+            {% for campaign, total in totals.campaigns.items()|sort %}
+                <li>{{ campaign }} - ${{ total|round(2) }}</a></li>
+            {% endfor %}
+            </ul>
 
-        <h3>Anunciantes</h3>
-        <ul>
-        {% for advertiser, total in totals.advertisers.items() %}
-            <li>{{ advertiser }} - {{ total }}</a></li>
-        {% endfor %}
-        </ul>
-
+            <h4>Anunciantes</h4>
+            <ul>
+            {% for advertiser, total in totals.advertisers.items()|sort %}
+                <li>{{ advertiser }} - ${{ total|round(2) }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
     </body>
 </html>

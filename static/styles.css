@@ -1,0 +1,13 @@
+.header {
+	padding: 2%;
+    background-color: lightblue;
+    border-color: gray;
+    color: white;
+    font-family: helvetica;
+}
+.content {
+	padding: 2%;
+    background-color: white;
+    font-family: helvetica;
+    color: gray;
+}
