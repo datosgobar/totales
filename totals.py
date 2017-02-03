@@ -10,9 +10,9 @@ MEDIUM = 4
 
 
 def compute_from(file):
-    advertisers = defaultdict(lambda: 0)
-    campaigns = defaultdict(lambda: 0)
-    media = defaultdict(lambda: 0)
+    advertisers = defaultdict(int)
+    campaigns = defaultdict(int)
+    media = defaultdict(int)
     total = 0
 
     with open(file, newline='') as csv_file:
