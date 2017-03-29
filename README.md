@@ -10,7 +10,7 @@ El repositorio cuenta con los módulos necesarios para una sencilla aplicación 
 
 ## Instalación 
 * Clonar el repositorio y crear un entorno virtual con `Python3`.
-* Instalar dependencias: `pip install -r requirements.txt`.
+* Instalar dependencias: `pip install -r requirements.txt`
 * Correr aplicación:
 
     `export FLASK_APP=application.py`
