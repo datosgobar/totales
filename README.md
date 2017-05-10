@@ -21,4 +21,4 @@ El repositorio cuenta con los módulos necesarios para una sencilla aplicación 
 Este repositorio es un fork de [totales](https://github.com/arperoni/totales).
 
 ## Contacto
-Te invitamos a [crearnos un issue](https://github.com/datosgobar/totales-pauta-oficial/issues/new?title=Encontre-un-bug-en-totales-pauta-oficial) en caso de que encuentres algún bug o tengas comentarios de alguna parte de `totales-pauta-oficial`. Para todo lo demás, podés mandarnos tu sugerencia o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
+Te invitamos a [crearnos un issue](https://github.com/datosgobar/totales-pauta-oficial/issues/new) en caso de que encuentres algún bug o tengas comentarios de alguna parte de `totales-pauta-oficial`. Para todo lo demás, podés mandarnos tu sugerencia o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
